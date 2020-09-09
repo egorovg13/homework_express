@@ -62,26 +62,19 @@
       "src": "./assets/img/products/Work9.jpg",
       "name": "Вино вдохновение",
       "price": 600
-    },
-    {
-      "src": "/assets/img/-4zb5GudKuo.jpg",
-      "name": "123",
-      "price": "234"
     }
   ],
   "users": [
     {
       "email": "egorovg13@gmail.com",
       "password": "4324"
-    },
-    {
-      "email": "",
-      "password": ""
-    },
-    {
-      "email": "",
-      "password": ""
     }
   ],
-  "uploads": []
+  "messages": [
+    {
+      "name": "123",
+      "email": "egorovg13@gmail.com",
+      "message": "234"
+    }
+  ]
 }

@@ -67,7 +67,10 @@ module.exports.upload = (req, res) => {
 
     if (valid.err) {
       fs.unlinkSync(files.photo.path);
-      console.log(valid.err.status);
+      console.log(valid.err);
+      res.render('pages/admin', {
+        msgfile: 'Произошла ошибка',
+      });
     }
 
     const fileName = path.join(upload, files.photo.name);

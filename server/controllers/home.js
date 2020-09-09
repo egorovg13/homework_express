@@ -9,6 +9,7 @@ module.exports.get = (req, res) => {
 
 module.exports.post = (req, res) => {
   req.flash('msgemail', `Ваше сообщение было получено, ${req.body.name}`);
+  db.get('messages').push(req.body).write();
   res.render('pages/index', {
     msgemail: req.flash("msgemail"),
     skills: db.get('skills').value(),
